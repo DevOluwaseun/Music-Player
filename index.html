@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" defer src="script/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img id="cover" src="images/cover-1.png" alt="Music Cover">
+        <h1 id="title"></h1>
+        <p id="author"></p>
+        <div class="duration">
+            <p class="current_duration">00:00</p>
+            <p class="total_duration">00:00</p>
+        </div>
+        <input id="progress" min="0" value="0" type="range">
+        <audio id="song" src="songs/forest-lullaby-110624.mp3"></audio>
+        <div class="controls">
+            <div class="previous">
+                <svg id="previous" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.8136 14.2517L23.6953 10.9841C25.0284 10.2435 26.6666 11.2074 26.6666 12.7324V19.2676C26.6666 20.7926 25.0284 21.7566 23.6953 21.016L17.8136 17.7483C16.442 16.9863 16.442 15.0137 17.8136 14.2517Z"
+                        fill="#4D5562" />
+                    <path d="M10.6666 22.6667L10.6666 9.33335" stroke="#4D5562" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M5.33325 22.6667L5.33325 9.33335" stroke="#4D5562" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+            <div class="pause_play">
+                <svg class="hidden pause" id="pause" height="20px" id="Layer_1" style="enable-background:new 0 0 32 20;"
+                    version="1.1" viewBox="0 0 512 512" width="32" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                        <path
+                            d="M224,435.8V76.1c0-6.7-5.4-12.1-12.2-12.1h-71.6c-6.8,0-12.2,5.4-12.2,12.1v359.7c0,6.7,5.4,12.2,12.2,12.2h71.6   C218.6,448,224,442.6,224,435.8z"
+                            fill="#E5E7EB" />
+                        <path
+                            d="M371.8,64h-71.6c-6.7,0-12.2,5.4-12.2,12.1v359.7c0,6.7,5.4,12.2,12.2,12.2h71.6c6.7,0,12.2-5.4,12.2-12.2V76.1   C384,69.4,378.6,64,371.8,64z"
+                            fill="#E5E7EB" />
+                    </g>
+                </svg>
+                <svg id="play" class="play" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21.941 14.244L14.119 10.236C12.686 9.50176 11 10.5696 11 12.2115V19.7885C11 21.4304 12.686 22.4982 14.119 21.764L21.941 17.756C23.353 17.0325 23.353 14.9675 21.941 14.244Z"
+                        fill="#E5E7EB" />
+                </svg>
+            </div>
+            <div class="next">
+                <svg id="next" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M14.1864 14.2517L8.30466 10.9841C6.9716 10.2435 5.33337 11.2074 5.33337 12.7324V19.2676C5.33337 20.7926 6.9716 21.7566 8.30466 21.016L14.1864 17.7483C15.558 16.9863 15.558 15.0137 14.1864 14.2517Z"
+                        fill="#4D5562" />
+                    <path d="M21.3334 22.6667L21.3334 9.33335" stroke="#4D5562" stroke-width="2"
+                        stroke-linecap="round" />
+                    <path d="M26.6667 22.6667L26.6667 9.33335" stroke="#4D5562" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
